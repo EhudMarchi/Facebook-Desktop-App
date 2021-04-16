@@ -1,0 +1,6 @@
+How many mutual friends do you and {0} have?
+How many photos did {0} uploaded overall?
+How many chekins does {0} uploaded?
+How many sport teams does {0} like?
+How many albums does {0} have?
+How many posts does {0} have?

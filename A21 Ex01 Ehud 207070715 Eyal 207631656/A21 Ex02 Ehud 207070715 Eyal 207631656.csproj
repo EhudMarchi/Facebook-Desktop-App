@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0098E6F-37D0-4E6C-AF65-A0116CD6FA55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>A21_Ex02_Ehud_207070715_Eyal_207631656</RootNamespace>
+    <AssemblyName>A21 Ex02 Ehud 207070715 Eyal 207631656</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook">
+      <HintPath>..\..\01_FB01_BasicFacebookFeatures.V8.0.0.1\FBApi\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="FbGraphApiWrapper">
+      <HintPath>..\..\01_FB01_BasicFacebookFeatures.V8.0.0.1\FBApi\FbGraphApiWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlbumSlideShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumSlideShow.Designer.cs">
+      <DependentUpon>AlbumSlideShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumViewerForm.Designer.cs">
+      <DependentUpon>AlbumViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="ContentViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContentViewerForm.Designer.cs">
+      <DependentUpon>ContentViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentViewerFormFactory.cs" />
+    <Compile Include="FilterIteratorListBox.cs" />
+    <Compile Include="FriendQuizBuilder.cs" />
+    <Compile Include="FriendQuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendQuizForm.Designer.cs">
+      <DependentUpon>FriendQuizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISerializable.cs" />
+    <Compile Include="ISlideShowable.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImagePreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostPreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostPreviewForm.Designer.cs">
+      <DependentUpon>PostPreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostsPreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostsPreviewForm.Designer.cs">
+      <DependentUpon>PostsPreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilePicturesSlideShow.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FriendQuizComposer.cs" />
+    <Compile Include="Services.cs" />
+    <Compile Include="SlideShowAdapter.cs" />
+    <EmbeddedResource Include="AlbumSlideshow.resx">
+      <DependentUpon>AlbumSlideShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlbumViewerForm.resx">
+      <DependentUpon>AlbumViewerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContentViewerForm.resx">
+      <DependentUpon>ContentViewerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterIteratorListBox.resx">
+      <DependentUpon>FilterIteratorListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendQuizForm.resx">
+      <DependentUpon>FriendQuizForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImagePreviewForm.resx">
+      <DependentUpon>ImagePreviewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostPreviewForm.resx">
+      <DependentUpon>PostPreviewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostsPreviewForm.resx">
+      <DependentUpon>PostsPreviewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\FilterIteratorListBox`1[].datasource" />
+    <None Include="Properties\DataSources\FilterIteratorListBox`1[]1.datasource" />
+    <None Include="Properties\DataSources\FilterIteratorListBox`1[]2.datasource" />
+    <None Include="Properties\DataSources\FilterIteratorListBox`1[]3.datasource" />
+    <None Include="Properties\DataSources\FilterIteratorListBox`1[]4.datasource" />
+    <None Include="Properties\DataSources\FilterIteratorListBox`1[]5.datasource" />
+    <None Include="Properties\DataSources\FilterIteratorListBox`1[]6.datasource" />
+    <None Include="Properties\DataSources\FilterIteratorListBox`1[]7.datasource" />
+    <None Include="Properties\DataSources\FriendQuizComposer.datasource" />
+    <None Include="Properties\DataSources\FriendQuizComposer1.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoaderGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Background.png" />
+    <Content Include="Resources\FBLogo.jpg" />
+    <Content Include="SUBMIT DP HIT A21 Ex03 EhudMarchi 207070715 EyalYerushalmi 207631656.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
